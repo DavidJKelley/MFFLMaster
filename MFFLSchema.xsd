@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="mffl">
+	  <xs:complexType>
+	    <xs:sequence>
+		<xs:element name="Collection">
+		  <xs:complexType>
+		    <xs:sequence> 
+				<xs:element name="Context" maxOccurs="unbounded">
+				  <xs:complexType>
+				    <xs:sequence>
+      					<xs:element name="Pattern" type="xs:string"/>
+      					<xs:element name="Created" type="xs:decimal"/>
+      					<xs:element name="Modified" type="xs:decimal"/> 
+      					<xs:simpleType name="Plutchik">
+					  <xs:restriction base="xs:string">
+					    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+					  </xs:restriction>
+					</xs:simpleType>
+      					<xs:element name="Interest" type="xs:decimal"/>
+      					<xs:element name="Need" type="xs:decimal"/>
+      					<xs:element name="MetaData" type="xs:string"/>
+      					<xs:element name="Signed" type="xs:string"/>
+
+					<xs:element name="Source">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element> 
+					
+					<xs:element name="Definition">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef" maxOccurs="unbounded">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element> 
+					 
+					<xs:element name="Related">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef" maxOccurs="unbounded">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element>
+					 
+					<xs:element name="Type">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef" maxOccurs="unbounded">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element>
+					 			
+					<xs:element name="ResponseType">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef" maxOccurs="unbounded">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element>
+					 			
+					<xs:element name="ResponseModel">
+					  <xs:complexType>
+					    <xs:sequence>
+						<xs:element name="ContextRef" maxOccurs="unbounded">
+						  <xs:complexType>
+						    <xs:sequence>
+							<xs:element name="Pattern" type="xs:string"/>
+							<xs:element name="RefType" type="xs:string"/>
+							<xs:simpleType name="Plutchik">
+							  <xs:restriction base="xs:string">
+							    <xs:pattern value="[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100],[0-100]"/>
+							  </xs:restriction>
+							</xs:simpleType>
+						    </xs:sequence>
+						  </xs:complexType>
+						</xs:element> 
+					    </xs:sequence>
+					  </xs:complexType>
+					</xs:element>
+					
+				    </xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+		    </xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+	    </xs:sequence>
+	  </xs:complexType> 
+    	  <xs:attribute name="version" type="xs:string" use="required"/>
+	</xs:element>
+</xs:schema>

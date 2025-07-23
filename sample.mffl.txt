@@ -1,0 +1,40 @@
+<?xml version=”1.0" encoding=”UTF-8"?>
+<mffl xsi:noNamespaceSchemaLocation=”https://AGILaboratory.com/MFFLSchema.xsd”
+xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” version=”1.0">
+<Collection>
+<Context>
+<Pattern />
+<Created />
+<Modified />
+<Plutchik>[0,0,0,0,0,0,0,0]</Plutchik>
+<Interest />
+<Need />
+<MetaData />
+<Signed />
+<Source><!– can have one –>
+<ContextRef>
+<Pattern/>
+<RefType/>
+<Plutchik/>
+</ContextRef>
+</Source>
+<Definition><!– can have many –>
+AGI Laboratory, Copyright 2021
+<ContextRef/>
+<ContextRef/>
+</Definition>
+<Related><!– can have many –>
+<ContextRef/>
+</Related>
+<Type><!– can have many –>
+<ContextRef/>
+</Type>
+<ResponseType><!– can have many –>
+<ContextRef/>
+</ResponseType>
+<ResponseModel><!– can have many –>
+<ContextRef/>
+</ResponseModel>
+</Context>
+</Collection>
+</mffl>
