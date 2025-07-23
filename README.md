@@ -3,3 +3,5 @@ Mind File Format Language (MFFL) file format.  An XML data format designed to im
 
 
 https://transhumanity.net/mind-file-format-mxl-or-mind-file-xml-format-language/ 
+
+production schema location: https://AGILaboratory.com/MFFLSchema.xsd 
